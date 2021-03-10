@@ -1,0 +1,413 @@
+/* file input css */
+         
+.inputfile + label {
+    max-width: 80%;
+    font-size: 10pt;
+    /* 20px */
+    font-weight: 10;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 5px 10px;
+    /* 10px 20px */
+}
+
+.no-js .inputfile + label {
+    display: none;
+}
+
+.inputfile:focus + label,
+.inputfile.has-focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+
+.inputfile + label img {
+    width: 17px;
+    height: 17px;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-top: -0.25em;
+    /* 4px */
+    margin-right: 0.50em;
+    /* 4px */
+}
+
+
+/* style 1 */
+
+.inputfile-1 + label {
+    color: #f1e5e6;
+    background-color: #a1a3a1;
+}
+
+.inputfile-1:focus + label,
+.inputfile-1.has-focus + label,
+.inputfile-1 + label:hover {
+    background-color: #a1a3a1;
+}
+
+
+.hover-image img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+	cursor: pointer;
+}
+.hover-image:hover img {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+cursor: pointer;
+}
+
+
+	.body-content{
+		max-width: 1200px;
+	    margin: auto;
+	}
+	.top-column {
+	    float: left;
+	    width: 400px;
+	    padding: 0;
+	    margin: 0;
+	}
+
+	.left-column {
+	    float: left;
+	    width: 845px;
+	    padding: 0;
+	    margin: 0;
+	}
+
+	.right-column {
+	    float: left;
+	    width: 350px;
+	    padding: 0;
+	    margin: 0;
+	}
+	.card-header{
+		border-bottom: 2px solid #50B200;
+		padding: 10px 0 5px 5px;
+	}
+	.card1{
+		margin-top: 20px;
+	}
+	.card-title{
+		font-size: 13pt;
+		font-style: bold;
+	}
+	.card-bottom{
+		height:250px;
+		overflow-y: auto;
+	}
+	blockquote {
+		font-family: Georgia, serif;
+		font-size: 12pt;
+		font-style: italic;
+		margin: 0.25em 0;
+		padding: 0.25em 40px;
+		line-height: 1.45;
+		position: relative;
+		color: #383838;
+	}
+	blockquote:before {
+		display: block;
+		content: "\201C";
+		font-size: 50px;
+		position: absolute;
+		left: 0px;
+		top: -10px;
+		color: #7a7a7a;
+	}
+	blockquote cite {
+		color: #999999;
+		font-size: 14px;
+		display: block;
+		margin-top: 5px;
+	}
+	blockquote cite:before {
+		content: "\2014 \2009";
+	}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.f_set{
+      border:2px solid green;
+    -moz-border-radius:8px;
+    -webkit-border-radius:8px;  
+    border-radius:8px;  
+}
+
+.btn {
+    background-color: #50B200;
+    border: none;
+    color: white;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 2px 1px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.center{
+	text-align: center;
+}
+
+.approvers{
+	list-style-type: none;
+    padding: 0;
+}
+
+.approver-name{
+	font-size: 11pt;
+	font-style: bold;
+}
+
+.approver-list{
+	 border-bottom:1px solid #ddd;
+	 padding: 7px;
+}
+
+.approver-name{
+	font-size: 11pt;
+	font-style: bold;
+}
+
+#notifications {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 11pt;
+}
+
+#notifications td, #notifications1 th {
+    border-bottom: 1px solid #ddd;
+    padding: 12px 8px;
+}
+
+#notifications tbody tr:hover {background-color: #F5F5F5;}
+
+#notifications th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+}
+.date-col, .actions-col{
+	width: 20%;
+	text-align: center;
+}
+.details-col{
+	width: 60%;
+}
+.notif-title{
+	border-bottom: 2px solid #50B200;;
+}
+
+.img-col{
+	width: 70px;
+	float: left;
+	margin-left: 30px;
+}
+.employee-info-col{
+	width: 600px;
+	margin-left: 15px; 
+	float: left;
+}
+.employee-name{
+	font-size: 16pt;
+	display: block;
+}
+.employee-dept{
+	font-size: 12pt;
+	display: block;
+}
+
+.notif-col{
+	padding:20px;
+}
+#attendance-col{
+  padding:15px;
+}
+
+.thought-col, .approvers-col{
+	padding: 0 10px;
+}
+
+.thought{
+	height: 188px;
+}
+
+
+	/*
+ CSS for the main interaction
+*/
+.tabset > input[type="radio"] {
+  position: absolute;
+  left: -200vw;
+}
+
+.tabset .tab-panel {
+  display: none;
+}
+
+.tabset > input:first-child:checked ~ .tab-panels > .tab-panel:first-child,
+.tabset > input:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(2),
+.tabset > input:nth-child(5):checked ~ .tab-panels > .tab-panel:nth-child(3),
+.tabset > input:nth-child(7):checked ~ .tab-panels > .tab-panel:nth-child(4),
+.tabset > input:nth-child(9):checked ~ .tab-panels > .tab-panel:nth-child(5),
+.tabset > input:nth-child(11):checked ~ .tab-panels > .tab-panel:nth-child(6) {
+  display: block;
+}
+
+
+.tabset > label {
+  position: relative;
+  display: inline-block;
+  padding: 15px 15px 25px;
+  border: 1px solid transparent;
+  border-bottom: 0;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.tabset > label::after {
+  content: "";
+  position: absolute;
+  left: 15px;
+  bottom: 10px;
+  width: 22px;
+  height: 4px;
+  background: #8d8d8d;
+}
+
+.tabset > label:hover,
+.tabset > input:focus + label {
+  color: black;
+}
+
+.tabset > label:hover::after,
+.tabset > input:focus + label::after,
+.tabset > input:checked + label::after {
+  background: #50B200;
+}
+
+.tabset > input:checked + label {
+  border-color: #ccc;
+  border-bottom: 2px solid #fff;
+  margin-bottom: -2px;
+}
+
+.tab-panel {
+  padding: 30px 0;
+  border-top: 2px solid #50B200;
+}
+
+
+.tabset {
+  width: 100%;
+  height: 700px;
+}
+
+/* reg_notice_slip.php */
+ .column-form-left-ns{
+    width:59%;
+    float:left;
+
+    padding: 1%;
+  }
+  .column-form-right-ns{
+    width:36%;
+    float:right;
+    padding: 1%;
+  }
+  .r_btns{
+    padding-top: 10px;
+  }
+  .col-left{
+    display: block;
+    padding: 10px;
+  }
+
+  td{padding: 15px 5px;}
+
+/* The container */
+.radiobtn {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 13px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.radiobtn input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 1px;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: #ddd;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.radiobtn:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.radiobtn input:checked ~ .checkmark {
+    background-color: #50B200;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radiobtn input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radiobtn .checkmark:after {
+  top: 4px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+
+/*reg_gatepass.php*/
+.column-form-left-gp{
+     width:46%;
+    float:left;
+    padding: 1%;
+}
