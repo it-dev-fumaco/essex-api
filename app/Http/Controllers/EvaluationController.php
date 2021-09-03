@@ -3235,7 +3235,7 @@ class EvaluationController extends Controller
         $expenses = DB::connection('mysql_erp')->table('tabExpense Claim Detail AS ecd')
             ->join('tabExpense Claim AS ec', 'ecd.parent', 'ec.name')
             ->where('ec.company', 'FUMACO Inc.')->whereYear('expense_date', $year)
-            ->selectRaw('ecd.expense_type, SUM(ecd.claim_amount) as total')
+            ->selectRaw('ecd.expense_type, SUM(ecd.amount) as total')
             ->groupBy('ecd.expense_type')->orderBy('total', 'desc')->limit(10)->get();
 
         return response()->json($expenses);
